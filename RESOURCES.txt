@@ -1,0 +1,15 @@
+RESOURCES
+bg image: ?
+aaustin 
+fembot1
+fembot 2
+fembot 3touch
+main body = austin powers background 
+objects: Austin, fembot 1, fembot 2, fembot 3 with 10px white border
+text = Austin "Danger "Powers vs Fembots"
+
+section 1 = top left 4 img columns header "Fighting As"
+section 2 = text = enemies remaining
+section 3 =  3 img columns header "Fight Section"
+section 4 = attack button
+section 5 = defender
