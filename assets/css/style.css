@@ -27,6 +27,23 @@ body{
 	border-style: solid;
 
 }
+.idlePlayers{
+	height: 160px;
+	width: 160px;
+	border-width: 3px;
+	border-color: darkgray;
+	border-style: solid;
+	background-color: red;
+}
+.enemy{
+	height: 160px;
+	width: 160px;
+	border-width: 3px;
+	border-color: darkgray;
+	border-style: solid;
+	background-color: black;
+	color: white;
+}
 .playerContRed{
 	height: 160px;
 	width: 160px;
