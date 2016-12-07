@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 for(var i = 0; i < players.length; i++){
 //Make divs for players starting position
-	var player = $('<div class = "player col-md-3 playerCont"></div>');
+	var player = $('<div class = "col-md-3 playerCont"></div>');
 // assign attributes for name, picture and strength
 		player.attr('data-name', players[i].name);
 		player.text(player.data('name'))
@@ -51,17 +51,16 @@ for(var i = 0; i < players.length; i++){
 //append new divs to top row
 		$("#start").append(player);
 }
+
 //make click handlers
-$('.playerCont').one('click', function(){
-	$('.playerCont').not(this).addClass('idlePlayers').removeClass('playerCont player').appendTo('#idlePlayers');
-
+$('div').one('click', '.playerCont', function (){
+	$(this).removeClass('playerCont').addClass('playerOne')
+	$('.playerCont').not(this).appendTo('#idlePlayers').removeClass('playerCont').addClass('idlePlayers');
+	alert("first", this);
+	 
 });
-
-$('.idlePlayers').one('click', function(){
-	$('#start').off('click');
-	console.log("I'm inhere", this);
-	debugger;
-	$(this).appendTo('#enemy').addClass('enemy').removeClass('idlePlayers player');
+$('div').one('click', '.idlePlayers', function(){
+	$(this).appendTo('#enemy').removeClass('idlePlayers').addClass('enemy');
 	});
 
 });
